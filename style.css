@@ -39,6 +39,7 @@ body {
   border: 2px solid rgb(var(--dark-color));
   background-color: initial;
   cursor: pointer;
+  transition: all 0.15s ease;
 }
 .window__yes:hover,
 .window__no:hover {
