@@ -23,8 +23,8 @@ function changeBtnPosition() {
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
   const { width, height } = refs.btnYes.getBoundingClientRect();
-  const x = getRandomNumber(1, windowWidth - width);
-  const y = getRandomNumber(1, windowHeight - height);
+  const x = getRandomNumber(width, windowWidth - width);
+  const y = getRandomNumber(height, windowHeight - height);
 
   refs.btnYes.style.position = "absolute";
   refs.btnYes.style.top = `${y}px`;
